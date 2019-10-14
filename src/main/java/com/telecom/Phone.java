@@ -9,6 +9,7 @@ public class Phone {
     @GeneratedValue
 	private Long id;
 	private Long number;
+	private String phoneType;
 	private Boolean isActive;
 	
 	
@@ -30,5 +31,10 @@ public class Phone {
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
 	}
-	
+	public String getPhoneType() {
+		return phoneType;
+	}
+	public void setPhoneType(String phoneType) {
+		this.phoneType = phoneType;
+	}
 }
